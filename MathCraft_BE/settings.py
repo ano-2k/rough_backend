@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'rest_framework.authtoken',
-    "django_rest_passwordreset",
+    # "django_rest_passwordreset",
 ]
 
 MIDDLEWARE = [
@@ -94,13 +94,21 @@ DATABASES = {
     #     "ENGINE": "django.db.backends.sqlite3",
     #     "NAME": BASE_DIR / "db.sqlite3",
     # }
-        'default': {
+    #     'default': {
+    #      'ENGINE': 'django.db.backends.mysql',
+    #      'NAME': 'mathcraft',
+    #      'USER': 'root',
+    #      'PASSWORD':'root',
+    #      'HOST': '127.0.0.1',
+    #      'PORT': '3306',
+    #  }
+    'default': {
          'ENGINE': 'django.db.backends.mysql',
-         'NAME': 'mathcraft',
-         'USER': 'root',
-         'PASSWORD':'root',
-         'HOST': '127.0.0.1',
-         'PORT': '3306',
+         'NAME': 'defaultdb',
+         'USER': 'avnadmin',
+         'PASSWORD':'AVNS_os1oNmFQy_0_Ov9SbDN',
+         'HOST': 'mysql-3c267edd-anoaadhik0914-f096.e.aivencloud.com',
+         'PORT': '14982',
      }
 }
 
